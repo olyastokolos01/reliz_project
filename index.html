@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome 6 через CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Font Awesome 6 через CDN з використанням script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="sportclothes">
+            <span class="fab fa-github"></span>
+            <h1>sportclothes</h1>
+        </div>
+        <div class="navbar">
+            <div class="searchBox">
+                <input type="text" placeholder="Search here..." />
+                <span class="fas fa-search" id="searchIcon"></span>
+            </div>
+        <ul>
+            <li>
+                <span class="fas fa-home" id="headIcon"></span>
+                <a href="#"> Home </a>
+                 </li>
+                 <li>
+                    <span class="fas fa-user-circle" id="headIcon"></span>
+                    <a href="#"> Profile </a>
+                 </li>
+                 <li>
+                    <span class="fas fa-question-circle" id="headIcon"></span>
+                    <a href="#"> Help </a>
+                     </li>
+                     <li>
+                        <span class="fas fa-lock" id="headIcon"></span>
+                        <a href="#"> Account </a>
+                         </li>
+                         <li>
+                            <span class="fas fa-sign-out" id="headIcon"></span>
+                            <a href="#"> Sign out </a>
+                             </li>
+        </ul>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>VIRTA - СПОРТИВНИЙ ОДЯГ</h1>
+            <p>Високоякісний та функціональний спортивний одяг для досягнення максимальних результатів у спорті та активному способі життя</p>
+            <a href="#" class="btn">ПЕРЕЙТИ ДО ПОКУПОК</a>
+        </div>
+    </section>
+
+    <!-- Категории товаров -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Категорії</h2>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="img/man clothes.JPG" alt="Чоловічий одяг" class="category-img">
+                    <div class="category-info">
+                        <h3>Чоловічий одяг</h3>
+                        <a href="#" class="btn">Переглянути</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="img/women clothes.JPG" alt="Жіночий одяг" class="category-img">
+                    <div class="category-info">
+                        <h3>Жіночий одяг</h3>
+                        <a href="#" class="btn">Переглянути</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="img/аксесуари.jpg" alt="Аксесуари" class="category-img">
+                    <div class="category-info">
+                        <h3>Аксесуари</h3>
+                        <a href="#" class="btn">Переглянути</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Популярні товари</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="img/спортивный костюм.jpg" alt="Спортивний костюм" class="product-img">
+                    <div class="product-info">
+                        <h3>Спортивний костюм Virta Pro</h3>
+                        <div class="product-price">1,999 грн</div>
+                        <a href="#" class="add-to-cart">Додати в кошик</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/футболка.jpg" alt="Футболка" class="product-img">
+                    <div class="product-info">
+                        <h3>Функціональна футболка Virta</h3>
+                        <div class="product-price">699 грн</div>
+                        <a href="#" class="add-to-cart">Додати в кошик</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/IMG_2980.JPG" alt="Легінси" class="product-img">
+                    <div class="product-info">
+                        <h3>Легінси Virta Fit</h3>
+                        <div class="product-price">899 грн</div>
+                        <a href="#" class="add-to-cart">Додати в кошик</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/IMG_2986.JPG" alt="Кросівки" class="product-img">
+                    <div class="product-info">
+                        <h3>Кросівки Virta Run</h3>
+                        <div class="product-price">2,499 грн</div>
+                        <a href="#" class="add-to-cart">Додати в кошик</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Переваги -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Чому обирають нас</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Висока якість</h3>
+                    <p>Ми використовуємо тільки високотехнологічні матеріали для виробництва нашого одягу</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Функціональність</h3>
+                    <p>Наш одяг розроблений з урахуванням потреб спортсменів для максимального комфорту</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Екологічність</h3>
+                    <p>Ми піклуємося про планету, використовуючи екологічно чисті матеріали</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚚</div>
+                    <h3>Швидка доставка</h3>
+                    <p>Доставляємо ваше замовлення протягом 1-2 робочих днів по всій країні</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Відгуки -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Відгуки клієнтів</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Одяг Virta дійсно допомагає мені досягати кращих результатів на тренуваннях. Якість матеріалів на найвищому рівні, а дизайн просто неперевершений!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/face1.jpg" alt="Олександр" class="author-img">
+                        <div class="author-info">
+                            <h4>Олександр М.</h4>
+                            <p>Професійний атлет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Раніше мені було складно знайти спортивний одяг, який би ідеально сидів і не сковував рухи. З Virta я нарешті знайшла ідеальні легінси для йоги!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/face2.jpg" alt="Марина" class="author-img">
+                        <div class="author-info">
+                            <h4>Марина В.</h4>
+                            <p>Інструктор з йоги</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Вже більше року замовляю спортивний одяг тільки в Virta. Відмінна якість, стильний дизайн і дуже зручно носити. Рекомендую всім своїм друзям!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/face3.jpg" alt="Ігор" class="author-img">
+                        <div class="author-info">
+                            <h4>Ігор Л.</h4>
+                            <p>Тренер з фітнесу</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блог -->
+    <section class="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Блог про спорт та здоров'я</h2>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="img/харчування2.jpg" alt="Правильне харчування" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-date">12 квітня, 2025</div>
+                        <h3 class="blog-title">Правильне харчування для максимальної ефективності тренувань</h3>
+                        <p class="blog-excerpt">Дізнайтеся, які продукти допоможуть вам досягти кращих результатів у спорті та швидше відновитися після тренувань.</p>
+                        <a href="#" class="read-more">Читати далі</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="img/тренування.jpg" alt="5 вправ для сильних ніг" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-date">5 квітня, 2025</div>
+                        <h3 class="blog-title">5 ефективних вправ для сильних та красивих ніг</h3>
+                        <p class="blog-excerpt">Комплекс вправ, який дозволить вам зміцнити м'язи ніг та досягти видимих результатів за короткий час.</p>
+                        <a href="#" class="read-more">Читати далі</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="img/харчування.jpg" alt="Вибір спортивного одягу" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-date">28 березня, 2025</div>
+                        <h3 class="blog-title">Як правильно обрати спортивний одяг для різних видів тренувань</h3>
+                        <p class="blog-excerpt">Поради експертів про те, на що звертати увагу при виборі спортивного одягу для різних видів фізичної активності.</p>
+                        <a href="#" class="read-more">Читати далі</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Підписка -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe-content">
+                <div class="section-title">
+                    <h2>Підпишіться на новини</h2>
+                </div>
+                <p>Отримуйте інформацію про нові колекції, знижки та корисні поради для спортивних тренувань</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" class="subscribe-input" required>
+                    <button type="submit" class="subscribe-btn">Підписатися</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER размещается ниже этого кода -->
+    
+</body>
+</html>
