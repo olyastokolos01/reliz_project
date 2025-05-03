@@ -1,108 +1,213 @@
 * {
-    padding: 0%;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+
+:root {
+    --primary-red: #e63946;
+    --dark-gray: #333333;
+    --light-gray: #f1f1f1;
+    --white: #ffffff;
 }
-    header{
-        position: relative;
-        width: 100%;
-        height: 70px;
-        background: rgb(8, 9, 19);
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .sportclothes{
-        display: flex;
-        align-items: center;
-        height: 100%;
-        padding: 4%;
-        width: 20%;
-    }
-    .sportclothes .fa-github {
-        font-size: 35px;
 
-    }
-    .sportclothes h1 {
-        margin-left: 5%;
+body {
+    background-color: var(--light-gray);
+}
 
-    }
-    .navbar{
-        position: relative;
-        width: 70%;
-        padding: 5%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .searchBox {
-        position: relative;
-        width: 40%;
-    }
-    .searchBox input {
-        width: 80%;
-        height: 35px;
-        border: none;
-        border-radius: 8px;
-        padding: 1%;
-        text-indent: 10px;
-        font-size: 18px;
-    }
-    #searchIcon {
-        position: relative;
-        left: -30px;
-        font-size: 22px;
-        color: rgb(37, 37, 37);
-        cursor: pointer;
-        z-index: 221;
-    }
-    ul{
-        width: 60%;
-        text-align: center;
-    }
-    ul li {
-        display: inline-block;
-        text-align: center;
-        margin-left: 4%;
-        padding: 1%;
-        transition: all 0.5s ease;
-        padding: 1%;
-        text-align: center;
-        cursor: pointer;
-        height: 20px;
-        overflow: hidden;
-    }
-    ul li a{
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
+.header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-bar {
+    background-color: var(--primary-red);
+    color: var(--white);
+    padding: 8px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-red);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    margin-right: 8px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-red);
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    position: relative;
+    margin-right: 20px;
+}
+
+.search-input {
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid var(--light-gray);
+    width: 250px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-red);
+    width: 280px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--dark-gray);
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    color: var(--dark-gray);
+    font-size: 22px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.header-icon:hover {
+    color: var(--primary-red);
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--primary-red);
+    color: var(--white);
+    font-size: 12px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.categories {
+    background-color: var(--light-gray);
+    padding: 12px 0;
+}
+
+.category-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.category-links li {
+    margin: 0 15px;
+}
+
+.category-links a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.category-links a:hover {
+    color: var(--primary-red);
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .nav-links {
         display: none;
     }
-    ul li #headIcon {
-        display: block;
-        font-size: 22px;
-       }
-    ul li span{
-        display: block;
-        font-size: 22px;
+
+    .search-input {
+        width: 180px;
     }
-    ul li a:hover{
-        background: white;
-        color: black;
+
+    .search-input:focus {
+        width: 200px;
     }
-    
-ul li a:active,
-:focus {
-   text-decoration: underline;
-   font-weight: 700;
+
+    .mobile-menu {
+        display: block;
+    }
 }
 
+@media (max-width: 768px) {
+    .search-form {
+        display: none;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -133,8 +238,8 @@ ul li a:active,
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #4dffc1;
-    color: rgb(21, 2, 2);
+    background-color: #e63f3f;
+    color: rgb(237, 231, 231);
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
@@ -510,4 +615,166 @@ ul li a:active,
                 font-size: 2rem;
             }
 
+        }
+
+        .footer {
+            background-color: #f2f2f2; /* сірий колір */
+            padding: 40px 0;
+            color: #333; /* темно-сірий для тексту */
+        }
+        
+        .footer-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-logo {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo h2 {
+            color: #e61616; /* червоний колір */
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-logo p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .footer-links {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+            display: block; /* Додано для явного відображення блоку */
+        }
+        
+        .footer-links h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 18px;
+            position: relative;
+        }
+        
+        .footer-links h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #e61616; /* червоний колір */
+            margin-top: 8px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding-left: 0; /* Забезпечує, що список не має відступів зліва */
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 10px;
+            display: block; /* Явно задаємо, що пункт списку є блоком */
+        }
+        
+        .footer-links ul li a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: inline-block; /* Забезпечує правильне відображення посилань */
+            padding: 2px 0; /* Додатковий відступ для кращої взаємодії */
+        }
+        
+        .footer-links ul li a:hover {
+            color: #e61616; /* червоний колір при наведенні */
+        }
+        
+        .footer-contact {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-contact h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 18px;
+            position: relative;
+        }
+        
+        .footer-contact h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #e61616; /* червоний колір */
+            margin-top: 8px;
+        }
+        
+        .social-icons {
+            display: flex;
+            margin-top: 15px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: #e61616; /* червоний колір */
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: #b30e0e; /* темніший червоний при наведенні */
+            transform: translateY(-3px);
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+        }
+        
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: #e61616; /* червоний колір */
+        }
+        
+        .copyright {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            color: #888;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+            }
+            
+            .footer-logo, .footer-links, .footer-contact {
+                width: 100%;
+                margin-bottom: 30px;
+            }
         }
